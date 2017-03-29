@@ -1,0 +1,6 @@
+applications:
+- name: jaalle_12f_app
+  path: target/12f_app-1.0-SNAPSHOT.jar
+  memory: 512M
+  services:
+  - my-db

@@ -1,0 +1,12 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: jaalle
+  api: https://api.run.pivotal.io
+  organization: jason.allen-org
+  space: developer
+  password:
+    secure: PLfH/3fhSuKuxZhRvva/ohAuJsYsU5Zxujeb9AyYtLDiqSMYgnMbv36SAD07NQ1H5Q5imvu1vBhpBUdrSLZvvAKWRHIbTudlSlyL9iNbqyOk6ilUsvpOvkTZvRHQ1q2vCTXBHqwbQcW7KfTQZdLmW2NSpPqJ/LRjoN6BAF2/9OpRv6UPPoJWoQ9Lm5VxTXrNNaVWOHAsbFnn/ldcDx66M9vM3B+QSohAHf74/s1UKsMTwRf/5hCe9lQVIr6lxhHabjgge/j5Tp3sx5fa78sLFsu/GXMGHMtTWUZJkOCBDAVm8yvpFM4N+9B7IIcdTZhHqHwq4Hmo6dRtrXn1/KlRQryUJVPrCOxlLS5eAT+f/uEXsquwgcLkp9AQ4TI3l51vCUmjexVa1Rr2GkgwuT8883OkQvdl7I4yZ6G+JjNjrg595lK8lZruU8/0Ubjx/66MKrdt5nLgJw2BbO4V9qQ9YphXX5D8UKz/kB7UPIBLx52DHJhzJfYBfuQO23VqotwUzdG0GnQyDYF1DZpXJm8Hlexh3pt1OuUSFDFbjn5+AGl+QBIgDF6Zf5aHR+qP3droydSUE0M9aK17JQHN57j3DlSr4BNFGxw7R10DGn6Kr9z7mFp8hTnmwfJHJCPNdxKRkOb9VblktuUifAC7z/mNbYY7M/s8fPGxXuu2+CEyWZE=
