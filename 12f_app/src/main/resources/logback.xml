@@ -9,7 +9,7 @@
 		</layout>
 	</appender>
 
-	<logger name="YOUR.PACKAGE" level="info" additivity="false">
+	<logger name="com.github.jaalle.app" level="info" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
 
