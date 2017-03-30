@@ -1,0 +1,12 @@
+language: java
+before_script: cd 12f_app
+script: mvn clean install
+deploy:
+  edge: true
+  provider: cloudfoundry
+  username: jason.allen@sas.com
+  api: https://api.run.pivotal.io
+  organization: jason.allen-org
+  space: development
+  password:
+    secure: mC00R66nywCxdHBK1RRsLD0c9Y5tTjJ3XO7YaboSKXktAcigAnPgchsWzUEGoW0kXMYl1tlTO2JZgGOy1qE4hvDqTcuFjyUm3GjJ9TbI1RfTfwQ4GHu2DwDtFC32R+cu5YaHAihvq01BiIoDVnTnVAxblRRsD3GBNaSbl+skal5sZ9JnAqYShU9pneYKVPU2KGri7XgZ4vuLxPADcj4GWtBh5CKE5WhQkfm+r/f0UbQ2GYdL1F5wlCBss7ezzUExEIHIuaEKJGr0jO/c4NxZbUDkPg0jgLiCrEq/7c9Ds1tmmmF4vbDKfM/3lRHbME1Rhm+Br46b+dhvEtFIWobgkxNez33gVIX2Yx2SM3JrROWz6cjiwMV0BA/NtgUvZjiFOK87sTUns3a9Tq1wLOngLhyDOhPUE3jf/gYHkz/zPZo5fIzdbSgWUFOFhoZbspIDn/iTTBS8Ob/r/NHJd8IvzDBs8G+J20xDezK4/ZxUPSn0F9IoN9tXUjCLug4dOw3hItkCppdf3iMHGb57jjdRWQhwtujDZCbxkLrpkTz2qFujWUUDr8X091TXlRG/NF3He/vBlKb7oYLk+iktA7Iq9exEI3+91goN8G1cTZRnrE4lip61qgNZKhr7MHvtiguaSQM/uXqXJtsJ2ukYlkoefAo4g1EtiTvrgwoYTyp+0XI=
